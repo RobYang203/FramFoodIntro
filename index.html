@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Farm food</title>
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but frontend-test doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong>
+    </noscript>
+    <div id="mask" class="loadingMask ">
+        <div class="loader"></div>
+        <div class="loader-text">下載資料，請稍後....</div>
+    </div>
+
+    <div class="main">
+        <h1>農村地方美食小吃特色料理</h1>
+        <header id="selectGroup">
+            <div id="sltCountry" class="country field">
+                <div class="select-style">
+                    <select>
+                        <option>請選擇城市</option>
+                    </select>
+                </div>  
+            </div>           
+            <div id="sltRural" class="rural field">
+                <div class="select-style">
+                    <select>
+                        <option>請選擇地區</option>
+                    </select>
+                </div>  
+            </div>
+        </header>
+        <article id="container">
+            
+         
+        </article>
+    </div>
+    <template id="foodTmp">
+        <div class="introduction">
+            
+            <div class="header">ss</div>
+            <div class="footer">
+                <div class="title">
+                    <div class="country">123123</div>
+                    <div class="shop">qeqwe</div>                      
+                </div>
+                <div class="hideContent">
+                    <span class="loading"></span>
+                    <div class="descript">
+                        rrr
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </template>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript">
+    const f = new Food();
+    f.init({
+        selectGId:"selectGroup",
+        loadingId:"mask",   
+        templateId:"foodTmp",
+        containerId:"container"
+    });
+    </script>
+</body>
+
+</html>
