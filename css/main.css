@@ -230,7 +230,7 @@ article {
 }
 
 
-@media screen AND (max-width:375px){
+@media screen AND (max-width:505px){
     .main{
         width: 100%;
     }
